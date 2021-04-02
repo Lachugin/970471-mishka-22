@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Владимир Лачугин](https://up.htmlacademy.ru/adaptive/22/user/970471).
-* Наставник: [Арсений Матыцин](https://htmlacademy.ru/profile/id225539).
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 

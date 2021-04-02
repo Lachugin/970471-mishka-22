@@ -13,7 +13,7 @@
     <nav class="main-nav">
 
       <a class="main-nav__logo">
-        <img class="main-nav__img" src="" alt="Логотип Мишка сайт по продаже игрушек, ручной работы">
+        <img class="main-nav__img" src="#" alt="Логотип Мишка сайт по продаже игрушек, ручной работы">
       </a>
 
       <button class="main-nav__toggle" type="button">
@@ -26,7 +26,7 @@
           <a href="#" class="main-nav__link">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Вязание на заказ</a>
+          <a href="form.html" class="main-nav__link">Вязание на заказ</a>
         </li>
         <li class="main-nav__item user-search-item">
           <a href="#" class="user-search-item__link">
@@ -46,7 +46,6 @@
   </header>
 
   <main class="page-main">
-
     <section class="promo">
       <div class="promo__wrapper">
         <ul class="promo__list promo__list-hide">
@@ -61,6 +60,16 @@
           </li>
         </ul>
         <h1 class="promo__title">Вязание на заказ</h1>
+        <div class="promo__inner">
+          <a href="#" class="promo__button">
+            Предметы интерьера
+            <svg class="promo__img"></svg>
+          </a>
+          <a href="#" class="promo__button promo__button--darker">
+            Детские игрушки
+            <svg class="promo__img"></svg>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -74,6 +83,7 @@
           <ul class="blank__list">
             <li class="blank__item blank__item--type">
               <div class="blank__item-wrap">
+                <span class="blank__text">ТИП</span>
                 <input class="blank__input blank__input--radio" type="radio" name="toggle" id="Accessory" checked>
                 <label class="blank__label" for="Accessory">Аксессуар для интерьера</label>
                 <input class="blank__input blank__input--radio" type="radio" name="toggle" id="Children">
@@ -82,51 +92,56 @@
             </li>
             <li class="blank__item blank__item--color">
               <div class="blank__item-wrap">
-                <input type="checkbox" name="" id="white" class="blank__input">
+                <span class="blank__text">Цвет</span>
+                <input type="checkbox" name="checkbox" id="white" class="blank__input">
                 <label for="white" class="blank__label">Белый</label>
-                <input type="checkbox" name="" id="gray" class="blank__input">
+                <input type="checkbox" name="checkbox" id="gray" class="blank__input">
                 <label for="gray" class="blank__label">Серый</label>
-                <input type="checkbox" name="" id="tiffany" class="blank__input">
+                <input type="checkbox" name="checkbox" id="tiffany" class="blank__input">
                 <label for="tiffany" class="blank__label">«Тиффани»</label>
-                <input type="checkbox" name="" id="black" class="blank__input">
+                <input type="checkbox" name="checkbox" id="black" class="blank__input">
                 <label for="black" class="blank__label">Черный</label>
-                <input type="checkbox" name="" id="pink" class="blank__input">
+                <input type="checkbox" name="checkbox" id="pink" class="blank__input">
                 <label for="pink" class="blank__label">Розовый</label>
-                <input type="checkbox" name="" id="orange" class="blank__input">
+                <input type="checkbox" name="checkbox" id="orange" class="blank__input">
                 <label for="orange" class="blank__label">Оранжевый</label>
               </div>
             </li>
             <li class="blank__item blank__item--fio">
               <div class="blank__item-wrap">
+                <span class="blank__text">ФИО</span>
                 <div class="blank__box">
-                  <label for="" class="blank__label">Имя:</label>
-                  <input type="text" name="" id="" class="blank__input" placeholder="Введите ваше имя*">
+                  <label for="name" class="blank__label">Имя:</label>
+                  <input type="text" name="text" id="name" class="blank__input" placeholder="Введите ваше имя*">
                 </div>
                 <div class="blank__box">
-                  <label for="" class="blank__label">Фамилия:</label>
-                  <input type="text" name="" id="" class="blank__input" placeholder="Укажите фамилию*">
+                  <label for="Surname" class="blank__label">Фамилия:</label>
+                  <input type="text" name="text" id="Surname" class="blank__input" placeholder="Укажите фамилию*">
                 </div>
                 <div class="blank__box">
-                  <label for="" class="blank__label">Отчество:</label>
-                  <input type="text" name="" id="" class="blank__input" placeholder="Отчество, если желаете">
+                  <label for="middle-name" class="blank__label">Отчество:</label>
+                  <input type="text" name="text" id="middle-name" class="blank__input" placeholder="Отчество, если желаете">
                 </div>
               </div>
             </li>
             <li class="blank__item blank__item--contacts">
               <div class="blank__item-wrap">
                 <div class="blank__box blank__box--tel">
-                  <input type="tel" name="" id="" class="blank__input blank__input--tel" placeholder="+7 XXX XX XX*">
+                  <span class="blank__text">тел</span>
+                  <input type="tel" name="phone" id="phone" class="blank__input blank__input--tel" placeholder="+7 XXX XX XX*">
                   <svg></svg>
                 </div>
                 <div class="blank__box blank__box--email">
-                  <input type="email" name="" id="" class="blank__input blank__input--email" placeholder="Ваш Email*">
+                  <span class="blank__text">E-mail</span>
+                  <input type="email" name="email" id="email" class="blank__input blank__input--email" placeholder="Ваш Email*">
                   <svg></svg>
                 </div>
               </div>
             </li>
             <li class="blank__item blank__item--not-obligatory">
               <div class="blank__item-wrap">
-                <textarea class="blank__area blank__area--not-obligatory" name="" id="" cols="30" rows="10"
+                <span class="blank__text">Доп</span>
+                <textarea class="blank__area blank__area--not-obligatory" name="text" id="textarea" cols="30" rows="10"
                   placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </li>
