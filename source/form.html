@@ -12,7 +12,7 @@
 
     <nav class="main-nav">
 
-      <a class="main-nav__logo">
+      <a href="index.html" class="main-nav__logo">
         <img class="main-nav__img" src="#" alt="Логотип Мишка сайт по продаже игрушек, ручной работы">
       </a>
 
@@ -23,7 +23,7 @@
       <ul class="main-nav__list">
 
         <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Каталог товаров</a>
+          <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
           <a href="form.html" class="main-nav__link">Вязание на заказ</a>
@@ -43,22 +43,23 @@
 
       </ul>
     </nav>
+
+    <ul class="page-header__list page-header__list-hide">
+      <li class="page-header__item">
+        <a href="#" class="page-header__link">Новые поступления</a>
+      </li>
+      <li class="page-header__item">
+        <a href="#" class="page-header__link">Распродажа</a>
+      </li>
+      <li class="promo__item">
+        <strong class="page-header__delivery">Бесплатная доставка по России</strong>
+      </li>
+    </ul>
   </header>
 
   <main class="page-main">
     <section class="promo">
       <div class="promo__wrapper">
-        <ul class="promo__list promo__list-hide">
-          <li class="promo__item">
-            <a href="#" class="promo__link">Новые поступления</a>
-          </li>
-          <li class="promo__item">
-            <a href="#" class="promo__link">Распродажа</a>
-          </li>
-          <li class="promo__item">
-            <strong class="promo__delivery">Бесплатная доставка по России</strong>
-          </li>
-        </ul>
         <h1 class="promo__title">Вязание на заказ</h1>
         <div class="promo__inner">
           <a href="#" class="promo__button">
@@ -80,8 +81,8 @@
           мы свяжемся с вами, чтобы уточнить детали.</strong>
 
         <form action="https://echo.htmlacademy.ru" method="post">
-          <ul class="blank__list">
-            <li class="blank__item blank__item--type">
+          <div class="blank__list">
+            <div class="blank__item blank__item--type">
               <div class="blank__item-wrap">
                 <span class="blank__text">ТИП</span>
                 <input class="blank__input blank__input--radio" type="radio" name="toggle" id="Accessory" checked>
@@ -89,8 +90,8 @@
                 <input class="blank__input blank__input--radio" type="radio" name="toggle" id="Children">
                 <label class="blank__label" for="Children">Детская игрушка</label>
               </div>
-            </li>
-            <li class="blank__item blank__item--color">
+            </div>
+            <div class="blank__item blank__item--color">
               <div class="blank__item-wrap">
                 <span class="blank__text">Цвет</span>
                 <input type="checkbox" name="checkbox" id="white" class="blank__input">
@@ -106,8 +107,8 @@
                 <input type="checkbox" name="checkbox" id="orange" class="blank__input">
                 <label for="orange" class="blank__label">Оранжевый</label>
               </div>
-            </li>
-            <li class="blank__item blank__item--fio">
+            </div>
+            <div class="blank__item blank__item--fio">
               <div class="blank__item-wrap">
                 <span class="blank__text">ФИО</span>
                 <div class="blank__box">
@@ -120,38 +121,41 @@
                 </div>
                 <div class="blank__box">
                   <label for="middle-name" class="blank__label">Отчество:</label>
-                  <input type="text" name="text" id="middle-name" class="blank__input" placeholder="Отчество, если желаете">
+                  <input type="text" name="text" id="middle-name" class="blank__input"
+                    placeholder="Отчество, если желаете">
                 </div>
               </div>
-            </li>
-            <li class="blank__item blank__item--contacts">
+            </div>
+            <div class="blank__item blank__item--contacts">
               <div class="blank__item-wrap">
                 <div class="blank__box blank__box--tel">
                   <span class="blank__text">тел</span>
-                  <input type="tel" name="phone" id="phone" class="blank__input blank__input--tel" placeholder="+7 XXX XX XX*">
+                  <input type="tel" name="phone" id="phone" class="blank__input blank__input--tel"
+                    placeholder="+7 XXX XX XX*">
                   <svg></svg>
                 </div>
                 <div class="blank__box blank__box--email">
                   <span class="blank__text">E-mail</span>
-                  <input type="email" name="email" id="email" class="blank__input blank__input--email" placeholder="Ваш Email*">
+                  <input type="email" name="email" id="email" class="blank__input blank__input--email"
+                    placeholder="Ваш Email*">
                   <svg></svg>
                 </div>
               </div>
-            </li>
-            <li class="blank__item blank__item--not-obligatory">
+            </div>
+            <div class="blank__item blank__item--not-obligatory">
               <div class="blank__item-wrap">
                 <span class="blank__text">Доп</span>
                 <textarea class="blank__area blank__area--not-obligatory" name="text" id="textarea" cols="30" rows="10"
                   placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
-            </li>
-            <li class="blank__item">
+            </div>
+            <div class="blank__item">
               <div class="blank__item-wrap">
                 <button class="button button__form" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
                 <span class="form__text">*Поля обязательны для заполнения</span>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </form>
       </div>
     </section>
