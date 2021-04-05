@@ -20,30 +20,31 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <ul class="main-nav__list">
-
-        <li class="main-nav__item">
-          <a  class="main-nav__link">Каталог товаров</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">Вязание на заказ</a>
-        </li>
-        <li class="main-nav__item user-search-item">
-          <a href="#" class="user-search-item__link">
-            <span class="visually-hidden">Поиск по сайту</span>
-            <svg class="user-search-item__icon"></svg>
-          </a>
-        </li>
-        <li class="main-nav__item user-shop-item">
-          <a href="#" class="user-shop-item__link">
-            <svg class="user-shop-item__icon"></svg>
-            Корзина: пока пуста
-          </a>
-        </li>
-
-      </ul>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a  class="main-nav__link">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item user-search-item">
+            <a href="#" class="user-search-item__link">
+              <span class="visually-hidden">Поиск по сайту</span>
+              <svg class="user-search-item__icon"></svg>
+            </a>
+          </li>
+          <li class="main-nav__item user-shop-item">
+            <a href="#" class="user-shop-item__link">
+              <svg class="user-shop-item__icon"></svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
-
     <ul class="page-header__list page-header__list-hide">
       <li class="page-header__item">
         <a href="#" class="page-header__link">Новые поступления</a>
@@ -51,7 +52,7 @@
       <li class="page-header__item">
         <a href="#" class="page-header__link">Распродажа</a>
       </li>
-      <li class="promo__item">
+      <li class="page-header__item">
         <strong class="page-header__delivery">Бесплатная доставка по России</strong>
       </li>
     </ul>
