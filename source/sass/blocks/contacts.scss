@@ -1,4 +1,3 @@
-
 .contacts__wrapper {
   margin: 0;
   padding-top: 0;
@@ -23,13 +22,14 @@
 }
 
 .contacts__text {
- padding-right: 36px;
+  padding-right: 36px;
 }
 
 .contacts__link {
   color: $text-basic-color;
+
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 167px;
     height: 1px;
@@ -40,7 +40,6 @@
 
 .contacts__address {
   color: $text-basic-color;
-  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

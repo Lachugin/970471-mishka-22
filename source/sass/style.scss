@@ -1,36 +1,26 @@
 
 // fonts
-@import 'fonts.scss';
+@import "fonts.scss";
 
 // variables style
-@import 'variables.scss';
+@import "variables.scss";
 
 // mixin
-@import 'mixin.scss';
+@import "mixin.scss";
 
 // blocks
-@import 'blocks/map';
-@import 'blocks/title';
-@import 'blocks/button';
-@import 'blocks/price';
-@import 'blocks/header/main-nav';
-@import 'blocks/promo/promo';
-@import 'blocks/shop-item/shop-item';
-@import 'blocks/about-us/about-us';
-@import 'blocks/reviews/reviews';
-@import 'blocks/reviews/slider';
-@import 'blocks/contacts/contacts';
-@import 'blocks/footer/footer.scss';
-
-
-
-
-
-
-
-
-
-//
+@import "blocks/map";
+@import "blocks/title";
+@import "blocks/button";
+@import "blocks/price";
+@import "blocks/main-nav";
+@import "blocks/promo";
+@import "blocks/shop-item";
+@import "blocks/about-us";
+@import "blocks/reviews";
+@import "blocks/slider";
+@import "blocks/contacts";
+@import "blocks/main-footer.scss";
 
 img {
   max-width: 100%;
@@ -54,10 +44,10 @@ a {
   overflow: hidden;
 }
 
-
 .page {
   background-color: $background-basic-color;
 }
+
 .page__body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;

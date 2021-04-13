@@ -1,7 +1,7 @@
-
 .promo {
   background-color: $background-promo-color;
 }
+
 .promo__wrapper {
   margin: 0;
   padding-top: 0;
@@ -16,7 +16,6 @@
 }
 
 .promo__title {
-  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 27px;
@@ -27,15 +26,12 @@
 .promo__button {
   background-color: $background-rare-color;
   color: $text-rare-color;
-  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
+
   &--darker {
     background-color: $background-rare-two-color;
   }
 }
-
-
-

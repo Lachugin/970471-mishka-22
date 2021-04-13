@@ -9,31 +9,30 @@
 
 .shop-item__title {
   color: $subtitle-basic-color;
-  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
 }
+
 .shop-item__strong {
-  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: $text-secondary-color;
 }
+
 .shop-item__card {
-  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
   color: $text-basic-color;
 }
+
 .shop-item__img {
   width: 260px;
   height: 315px;
   background-color: $img-none-color;
 }
-
