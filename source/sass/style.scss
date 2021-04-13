@@ -1,1 +1,66 @@
-// Начните писать стили здесь
+
+// fonts
+@import 'fonts.scss';
+
+// variables style
+@import 'variables.scss';
+
+// mixin
+@import 'mixin.scss';
+
+// blocks
+@import 'blocks/map';
+@import 'blocks/title';
+@import 'blocks/button';
+@import 'blocks/price';
+@import 'blocks/header/main-nav';
+@import 'blocks/promo/promo';
+@import 'blocks/shop-item/shop-item';
+@import 'blocks/about-us/about-us';
+@import 'blocks/reviews/reviews';
+@import 'blocks/reviews/slider';
+@import 'blocks/contacts/contacts';
+@import 'blocks/footer/footer.scss';
+
+
+
+
+
+
+
+
+
+//
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.page {
+  background-color: $background-basic-color;
+}
+.page__body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
