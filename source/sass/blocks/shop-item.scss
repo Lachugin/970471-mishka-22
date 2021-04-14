@@ -1,0 +1,38 @@
+
+.shop-item__wrapper {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.shop-item__title {
+  color: $subtitle-basic-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.shop-item__strong {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $text-secondary-color;
+}
+
+.shop-item__card {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: $text-basic-color;
+}
+
+.shop-item__img {
+  width: 260px;
+  height: 315px;
+  background-color: $img-none-color;
+}

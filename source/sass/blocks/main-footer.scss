@@ -1,0 +1,21 @@
+.main-footer {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: $background-footer-color;
+}
+
+.main-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-footer__academy-logo__text {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+  color: $headlines-basic-color;
+}

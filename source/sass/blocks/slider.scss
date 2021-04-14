@@ -1,0 +1,16 @@
+.slider__toggle {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 26px;
+  background-color: $button-bg-color;
+
+  &--left {
+    background-image: url("../img/reviews/huge-arrow-left.svg");
+  }
+
+  &--right {
+    background-image: url("../img/reviews/huge-arrow-right.svg");
+  }
+}
