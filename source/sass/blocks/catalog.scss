@@ -1,0 +1,24 @@
+.catalog__wrapper {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  background: $background-basic-color;
+  mix-blend-mode: normal;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+}

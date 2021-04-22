@@ -12,6 +12,11 @@
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  //
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-nav__list {
@@ -24,6 +29,15 @@
   line-height: 24px;
 }
 
+.main-nav__list--mobail {
+  display: none;
+}
+
+.main-nav__item {
+  padding-top: 28px;
+  padding-bottom: 26px;
+}
+
 .main-nav__link {
   color: $subtitle-basic-color;
 }
@@ -34,4 +48,8 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
+}
+
+.main-nav__delivery--mobail {
+  display: none;
 }

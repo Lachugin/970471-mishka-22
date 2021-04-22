@@ -1,0 +1,56 @@
+.demonstration {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.demonstration__wrapper {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.demonstration__video {
+  position: relative;
+  background-image: url("../img/catalog/video-bg-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 260px;
+  height: 150px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/catalog/play.svg");
+    width: 100px;
+    height: 77px;
+    left: 30%;
+    top: 30%;
+  }
+}
+
+.demonstration__inner {
+  padding-left: 28px;
+  padding-right: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.demonstration__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.demonstration__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.demonstration__button {
+  text-align: center;
+}
