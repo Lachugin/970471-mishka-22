@@ -2,27 +2,23 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Мишка</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicon/icon-favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicon/icon-favicon-apple-touch180x180.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="img/favicon/icon-favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/favicon/icon-favicon-apple-touch180x180.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="page__body">
-
   <header class="page-header">
-
     <nav class="main-nav">
-
       <a href="index.html" class="main-nav__logo">
         <img class="main-nav__logo-img" src="img/mishka-logo-mobile.svg" width="86" height="35"
-          alt="Логотип Мишка сайт по продаже игрушек, ручной работы">
+          alt="Логотип Мишка сайт по продаже игрушек, ручной работы" />
       </a>
 
       <button class="main-nav__toggle" type="button">
@@ -30,7 +26,6 @@
       </button>
 
       <div class="main-nav__wrapper">
-
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link">Каталог товаров</a>
@@ -43,19 +38,19 @@
         <ul class="main-nav__list">
           <li class="main-nav__item user-search-item">
             <a href="#" class="main-nav__link user-search-item__link">
-              <img class="user-search-item__icon" src="img/header/search-icon.svg" width="18" height="18" alt="Поиск">
+              <img class="user-search-item__icon" src="img/header/search-icon.svg" width="18" height="18" alt="Поиск" />
               <span>Поиск по сайту</span>
             </a>
           </li>
           <li class="main-nav__item user-shop-item">
             <a href="#" class="main-nav__link user-shop-item__link">
-              <img class="user-shop-item__icon" src="img/header/cart-icon.svg" width="21" height="18" alt="Корзина">
+              <img class="user-shop-item__icon" src="img/header/cart-icon.svg" width="21" height="18" alt="Корзина" />
               <span>Корзина: пока пуста</span>
             </a>
           </li>
         </ul>
 
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--mobail">
           <li class="main-nav__item">
             <a href="#" class="main-nav__link user-search-item__link">Новые поступления</a>
           </li>
@@ -64,48 +59,93 @@
           </li>
         </ul>
 
-        <strong class="main-nav__delivery">Бесплатная доставка по России</strong>
+        <strong class="main-nav__delivery main-nav__delivery--mobail">Бесплатная доставка по России</strong>
       </div>
     </nav>
   </header>
 
   <main class="page-main">
+    <section class="promo">
+      <div class="promo__wrapper promo__bg-img">
+        <h2 class="promo__title">Каталог товаров</h2>
+      </div>
+    </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Лист с товарами</h2>
       <div class="catalog__wrapper">
         <ul class="catalog__list">
           <li class="catalog__item">
+
             <div class="card-item">
-              <img src="#" alt="Зайчик-попрыгайчик" class="card-item__img">
-              <h3 class="card-item__title">Зайчик-попрыгайчик</h3>
-              <p class="card-item__text">Рост 30 см, вес 200 г</p>
-              <span class="card-item__price">1 200 руб.</span>
-              <button class="card-item__button">
-                <span class="visually-hidden">Корзина</span>
-              </button>
+              <div class="card-item__inner">
+                <img src="img/catalog/bunny-mobile.png" alt="Зайчик-попрыгайчик" class="card-item__img" />
+                <div class="card-item__info">
+                  <h3 class="card-item__title">Зайчик-попрыгайчик</h3>
+                  <p class="card-item__text">Рост 30 см, вес 200 г</p>
+                  <div class="card-item__box">
+                    <span class="card-item__price">1 200 руб.</span>
+                    <a href="#" class="card-item__link">
+                      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.2"
+                          d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
+                          fill="black" />
+                      </svg>
+                      <span class="visually-hidden">Корзина</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="catalog__item">
+            <div class="card-item">
+              <div class="card-item__inner">
+                <img src="img/catalog/basket-mobile.png" alt="Корзинка для белья" class="card-item__img" />
+                <div class="card-item__info">
+                  <h3 class="card-item__title">Корзинка для белья</h3>
+                  <p class="card-item__text">Диаметр 15 см, высота 10 см</p>
+                  <div class="card-item__box">
+                    <span class="card-item__price">690 руб.</span>
+                    <a href="#" class="card-item__link">
+                      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.2"
+                          d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
+                          fill="black" />
+                      </svg>
+                      <span class="visually-hidden">Корзина</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
             <div class="card-item">
-              <img src="#" alt="Корзинка для белья" class="card-item__img">
-              <h3 class="card-item__title">Корзинка для белья</h3>
-              <p class="card-item__text">Диаметр 15 см, высота 10 см</p>
-              <span class="card-item__price">690 руб.</span>
-              <button class="card-item__button">
-                <span class="visually-hidden">Корзина</span>
-              </button>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="card-item">
-              <img src="#" alt="Большая корзинка для игрушек" class="card-item__img">
-              <h3 class="card-item__title">Большая корзинка для игрушек</h3>
-              <p class="card-item__text">Диаметр 30 см, высота 30 см</p>
-              <span class="card-item__price">1 500 руб.</span>
-              <button class="card-item__button">
-                <span class="visually-hidden">Корзина</span>
-              </button>
+              <div class="card-item__inner">
+                <img src="img/catalog/big-basket-mobile.png" alt="Большая корзинка для игрушек"
+                  class="card-item__img" />
+                <div class="card-item__info">
+                  <h3 class="card-item__title">Большая корзинка для игрушек</h3>
+                  <p class="card-item__text">Диаметр 30 см, высота 30 см</p>
+                  <div class="card-item__box">
+                    <span class="card-item__price">1 500 руб.</span>
+                    <a href="#" class="card-item__link">
+                      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.2"
+                          d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
+                          fill="black" />
+                      </svg>
+                      <span class="visually-hidden">Корзина</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </li>
         </ul>
@@ -119,40 +159,51 @@
           <!-- тут будет мультик  -->
         </div>
         <div class="demonstration__box">
-          <h3 class="demonstration__title">Процесс производства</h3>
-          <p class="demonstration__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-            как появляются наши товары.</p>
+          <div class="demonstration__inner">
+            <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M26 10L32 6V22L26 18V10ZM24 10V18C24 20.2 22.2 22 20 22H4C1.8 22 0 20.2 0 18V10C0 7.8 1.8 6 4 6H14C14 4.9 14.9 4 16 4V2H5C4.4 2 4 1.6 4 1C4 0.4 4.4 0 5 0H17C17.6 0 18 0.4 18 1V4C19.1 4 20 4.9 20 6C22.2 6 24 7.8 24 10ZM12 10H4V18H12V10ZM20 11C20 10.4 19.6 10 19 10H15C14.4 10 14 10.4 14 11C14 11.6 14.4 12 15 12H19C19.6 12 20 11.6 20 11Z"
+                fill="#63D1BB" />
+            </svg>
+            <h3 class="demonstration__title">Процесс производства</h3>
+          </div>
+
+          <p class="demonstration__text">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное
+            видео о том, как появляются наши товары.
+          </p>
           <button class="button demonstration__button">СДелать заказ</button>
         </div>
-
       </div>
     </section>
-
   </main>
+
   <footer class="main-footer">
     <div class="main-footer__logo">
-      <svg></svg>
+      <img class="visually-hidden" src="img/footer/logo-footer.svg" alt="logo" />
     </div>
     <ul class="main-footer__list">
       <li class="main-footer__item">
         <a href="#" class="main-footer__link">
-          <svg></svg>
+          <img src="img/footer/insta.svg" alt="Инстаграм" />
         </a>
       </li>
       <li class="main-footer__item">
         <a href="#" class="main-footer__link">
-          <svg></svg>
+          <img src="img/footer/fb.svg" alt="Фейсбук" />
         </a>
       </li>
       <li class="main-footer__item">
         <a href="#" class="main-footer__link">
-          <svg></svg>
+          <img src="img/footer/twitter.svg" alt="Твиттер" />
         </a>
       </li>
     </ul>
-    <div class="academy-logo">
-      <span class="academy-logo__text">Разработано</span>
-      <a href="https://htmlacademy.ru/intensive/adaptive"><svg></svg></a>
+
+    <div class="main-footer__academy-logo">
+      <span class="main-footer__academy-logo__text">Разработано</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/footer/icon-logo-htmlacademy.svg"
+          alt="Логотип htmlacademy" /></a>
     </div>
   </footer>
 </body>

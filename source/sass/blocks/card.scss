@@ -1,0 +1,45 @@
+.card-item__img {
+  width: 260px;
+  height: 195px;
+  background-color: $img-none-color;
+}
+
+.card-item__info {
+  padding-left: 28px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item__title {
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $subtitle-basic-color;
+}
+
+.card-item__text {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: $text-basic-color;
+}
+
+.card-item__box {
+  padding-top: 18px;
+  padding-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item__price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: $subtitle-basic-color;
+}

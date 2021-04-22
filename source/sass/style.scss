@@ -4,8 +4,6 @@
 
 // variables style
 @import "variables.scss";
-
-// index
 @import "blocks/map";
 @import "blocks/title";
 @import "blocks/button";
@@ -17,9 +15,11 @@
 @import "blocks/reviews";
 @import "blocks/slider";
 @import "blocks/contacts";
-@import "blocks/main-footer.scss";
-// form
+@import "blocks/main-footer";
 @import "blocks/form";
+@import "blocks/card";
+@import "blocks/catalog";
+@import "blocks/demonstration";
 
 img {
   max-width: 100%;
