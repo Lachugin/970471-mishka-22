@@ -1,20 +1,39 @@
+.contacts {
+  padding-top: 38px;
+
+  &::before {
+    content: "";
+    display: block;
+    margin: 0  auto;
+    background-image: url("../img/mobail-decor.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 320px;
+    height: 6px;
+    left: 0;
+    top: 915px;
+  }
+}
+
 .contacts__wrapper {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .contacts__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .contacts__list {
   margin: 0;
   padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
   list-style: none;
   font-weight: normal;
   font-size: 14px;
@@ -22,20 +41,29 @@
 }
 
 .contacts__text {
-  padding-right: 36px;
+  width: 76px;
 }
 
 .contacts__link {
+  position: relative;
   color: $text-basic-color;
+  width: 183px;
 
   &::after {
+    position: absolute;
     content: "";
     display: block;
     width: 167px;
     height: 1px;
-    margin-left: 83px;
+    margin-left: 0;
     background-color: $decorative-border-color;
   }
+}
+
+.contacts__item {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__address {
@@ -44,4 +72,15 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
+  width: 183px;
+}
+
+.contacts__button {
+  margin: 0 auto;
+}
+
+.contacts__inner {
+  padding-top: 41px;
+  padding-bottom: 38px;
+  text-align: center;
 }

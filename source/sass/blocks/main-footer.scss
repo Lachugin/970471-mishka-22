@@ -8,12 +8,42 @@
 }
 
 .main-footer__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  width: 147px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    right: 0;
+    left: -60px;
+    width: 260px;
+    height: 2px;
+    box-shadow: 0 1px 0;
+    color: #e5e5e5;
+  }
+}
+
+.main-footer__academy-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 31px;
+  text-align: center;
 }
 
 .main-footer__academy-logo__text {
+  padding-right: 15px;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;

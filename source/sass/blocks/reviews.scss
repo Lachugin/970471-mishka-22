@@ -15,10 +15,11 @@
 }
 
 .reviews__author-name {
+  display: flex;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 24px;
   color: $subtitle-basic-color;
 }
 
@@ -28,4 +29,16 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
+}
+
+.reviews__item {
+  margin: 0 auto;
+}
+
+.reviews__toggles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 28px;
+  padding-bottom: 38px;
 }

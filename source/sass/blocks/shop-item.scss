@@ -13,6 +13,7 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+  margin-bottom: 0;
 }
 
 .shop-item__strong {
@@ -35,4 +36,33 @@
   width: 260px;
   height: 315px;
   background-color: $img-none-color;
+}
+
+.shop-item__table {
+  margin: 0 auto;
+  width: 260px;
+  padding-bottom: 28px;
+}
+
+.shop-item__tab {
+  padding-bottom: 10px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    margin: 0 auto;
+    content: "";
+    display: block;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 160px;
+    height: 1px;
+    box-shadow: 0 1px 0;
+    color: #ececee;
+  }
+}
+
+.shop-item__holder {
+  text-align: center;
 }

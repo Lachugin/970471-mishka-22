@@ -3,24 +3,45 @@
 }
 
 .promo__wrapper {
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .promo__bg-img {
   background-image: url("../img/promo/hero-mobile@2x 1.png");
   background-repeat: no-repeat;
+  background-position: center -15px;
 }
 
 .promo__title {
+  margin: 0 auto;
+  padding: 73px 30px 120px 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 244px;
   font-style: normal;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   color: $headlines-basic-color;
+
+  @media (min-width: 768px) {
+    width: 668px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+.promo__inner {
+  display: grid;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .promo__button {
@@ -30,6 +51,9 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
+  padding: 27px 30px;
+  display: flex;
+  justify-content: space-between;
 
   &--darker {
     background-color: $background-rare-two-color;
