@@ -10,13 +10,33 @@
   position: relative;
 
   @media (min-width: 768px) {
-    grid-template-columns: 2fr 0.5fr 1fr;
-    grid-template-rows: 89px 50px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 89px 39px;
+    padding-top: 0;
+    position: relative;
+    margin-bottom: -39px;
+
+    &::after {
+      position: absolute;
+      margin: 0 auto;
+      content: "";
+      display: block;
+      right: 0;
+      left: 0;
+      top: 88px;
+      width: 100%;
+      height: 1px;
+      box-shadow: 0 1px 0;
+      color: #ececee;
+    }
   }
 
   @media (min-width: 1150px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+
+    &::after {
+      width: 1150px;
+    }
   }
 }
 
@@ -31,6 +51,10 @@
   position: absolute;
   top: 29px;
   right: 30px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .main-nav__logo {
@@ -39,6 +63,7 @@
 
   @media (min-width: 768px) {
     text-align: left;
+    padding-top: 22px;
   }
 
   @media (min-width: 1150px) {
@@ -59,6 +84,11 @@
 
   @media (min-width: 768px) {
     display: flex;
+  }
+
+  @media (min-width: 1150px) {
+    align-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -85,6 +115,8 @@
 
   @media (min-width: 1150px) {
     display: flex;
+    justify-content: space-between;
+    width: 330px;
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -96,38 +128,107 @@
   padding-bottom: 26px;
   position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    display: block;
-    top: 0;
-    right: -67px;
-    width: 343px;
-    height: 2px;
-    box-shadow: 0 1px 0;
-    color: #ececee;
+  @media (min-width: 768px) {
+    &--decor {
+      &::before {
+        position: absolute;
+        transform: rotate(90deg);
+        content: "";
+        display: block;
+        top: 23px;
+        right: 70px;
+        width: 100px;
+        height: 23px;
+        box-shadow: 0 2px 0;
+        color: #ececee;
+      }
+
+      &::after {
+        position: absolute;
+        transform: rotate(90deg);
+        content: "";
+        display: block;
+        top: 23px;
+        right: -5px;
+        width: 100px;
+        height: 23px;
+        box-shadow: 0 2px 0;
+        color: #ececee;
+      }
+    }
   }
 
-  &--border {
-    &::after {
+  @media (max-width: 767px) {
+    &::before {
       position: absolute;
       content: "";
       display: block;
-      bottom: 0;
+      top: 0;
       right: -67px;
       width: 343px;
       height: 2px;
       box-shadow: 0 1px 0;
       color: #ececee;
     }
+
+    &--border {
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        bottom: 0;
+        right: -67px;
+        width: 343px;
+        height: 2px;
+        box-shadow: 0 1px 0;
+        color: #ececee;
+      }
+    }
   }
 }
+
+.main-nav__item-table {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1150px) {
+    font-size: 17px;
+    line-height: 24px;
+
+    &--border {
+      &::before {
+        position: absolute;
+        transform: rotate(90deg);
+        content: "";
+        display: block;
+        top: 16px;
+        right: 112px;
+        width: 100px;
+        height: 35px;
+        box-shadow: 0 2px 0;
+        color: #ececee;
+      }
+    }
+  }
+}
+
+.main-nav__item-table:nth-child(1) {
+  @media (min-width: 768px) {
+    padding-right: 30px;
+  }
+}
+
 
 .main-nav__table {
   @media (min-width: 768px) {
     grid-row-start: 1;
     grid-column-start: 2;
     grid-column-end: 4;
+    justify-content: flex-end;
   }
 
   @media (min-width: 1150px) {
@@ -146,6 +247,23 @@
   position: absolute;
   top: 0;
   left: -30px;
+
+  @media (min-width: 768px) {
+    top: 0;
+    left: -40px;
+    width: 21px;
+    height: 18px;
+  }
+}
+
+.main-nav__search {
+  @media (min-width: 768px) {
+    position: relative;
+    top: 0;
+    left: -85px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .main-nav__delivery {
@@ -163,6 +281,7 @@
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 4;
+    text-align: right;
   }
 
   @media (min-width: 1150px) {

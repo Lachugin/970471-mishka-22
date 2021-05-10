@@ -8,9 +8,29 @@
 }
 
 .promo__bg-img {
-  background-image: url("../img/promo/hero-mobile@2x 1.png");
+  background-image: url("../img/promo/hero-mobile.png");
   background-repeat: no-repeat;
-  background-position: center -15px;
+  background-size: 320px auto;
+  background-position: center -34px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo/hero-mobile@2x.png");
+    background-size: 320px auto;
+    background-position: center -34px;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/promo/hero-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 768px auto;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/hero-desktop@2x.png");
+      background-size: 768px auto;
+      background-position: center;
+    }
+  }
 }
 
 .promo__title {
@@ -27,7 +47,9 @@
   color: $headlines-basic-color;
 
   @media (min-width: 768px) {
-    width: 668px;
+    padding-top: 154px;
+    padding-bottom: 373px;
+    width: 498px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -57,5 +79,9 @@
 
   &--darker {
     background-color: $background-rare-two-color;
+  }
+
+  @media (min-width: 768px) {
+    padding: 10px 30px;
   }
 }
