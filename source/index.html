@@ -22,10 +22,10 @@
 
       <a class="main-nav__logo">
         <picture>
-          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" width="136" height="46">
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" width="148" height="73">
           <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" width="114" height="46">
           <img class="main-nav__logo-img" src="img/mishka-logo-mobile.svg" width="86" height="35"
-          alt="Логотип Мишка сайт по продаже игрушек, ручной работы">
+            alt="Логотип Мишка сайт по продаже игрушек, ручной работы">
         </picture>
       </a>
 
@@ -34,7 +34,7 @@
       </button>
 
       <ul class="main-nav__list main-nav__table-grid">
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item-d">
           <a href="catalog.html" class="main-nav__link main-nav__item-table">Каталог товаров</a>
         </li>
         <li class="main-nav__item main-nav__item-table main-nav__item-table--border">
@@ -115,11 +115,17 @@
               </tr>
             </table>
           </div>
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/shop-item/triple-set-desktop.png 1x, img/shop-item/triple-set-desktop@2.png 2x">
-            <source media="(min-width: 768px)" srcset="img/shop-item/triple-set-tablet.png 1x, img/shop-item/triple-set-tablet@2.png 2x">
-            <img class="shop-item__img" src="img/shop-item/triple-set-mobile.png 1x" srcset="img/shop-item/triple-set-mobile2@.png 2x" alt="Вязаная корзинка">
-          </picture>
+          <div class="shop-item__img-inner">
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/shop-item/triple-set-desktop.png 1x, img/shop-item/triple-set-desktop@2.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/shop-item/triple-set-tablet.png 1x, img/shop-item/triple-set-tablet@2.png 2x">
+              <img class="shop-item__img" src="img/shop-item/triple-set-mobile.png 1x"
+                srcset="img/shop-item/triple-set-mobile2@.png 2x" alt="Вязаная корзинка">
+            </picture>
+          </div>
+
           <div class="shop-item__holder">
             <p class="price">Цена: 990 руб.</p>
             <button class="button shop-item__button">ЗАКАЗАТЬ</button>
@@ -132,24 +138,25 @@
       <div class="about-us__wrapper">
         <h2 class="title about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item">
-            <p class="about-us__subtitle about-us__subtitle--icon-flower">Экологически чистые материалы</p>
+          <li class="about-us__item about-us__item-flower">
+            <p class="about-us__subtitle about-us__subtitle--icon-flower">Экологически<br> чистые материалы</p>
           </li>
-          <li class="about-us__item">
-            <p class="about-us__subtitle about-us__subtitle--icon-banknote">Скандинавский стиль по российской цене</p>
+          <li class="about-us__item about-us__item-banknote">
+            <p class="about-us__subtitle about-us__subtitle--icon-banknote">Скандинавский стиль<br> по российской цене
+            </p>
           </li>
-          <li class="about-us__item">
-            <p class="about-us__subtitle about-us__subtitle--icon-heart">Увеличивает лайки на фотографиях</p>
+          <li class="about-us__item about-us__item-heart">
+            <p class="about-us__subtitle about-us__subtitle--icon-heart">Увеличивает лайки<br> на фотографиях</p>
           </li>
-          <li class="about-us__item">
-            <p class="about-us__subtitle about-us__subtitle--icon-ball">Связано вручную
+          <li class="about-us__item about-us__item-ball">
+            <p class="about-us__subtitle about-us__subtitle--icon-ball">Связано вручную<br>
               с любовью и умилением</p>
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item-rocket">
             <p class="about-us__subtitle about-us__subtitle--icon-rocket">Поддержка отечественного производителя</p>
           </li>
-          <li class="about-us__item">
-            <p class="about-us__subtitle about-us__subtitle--icon-gift">Поставляется
+          <li class="about-us__item about-us__item-gift">
+            <p class="about-us__subtitle about-us__subtitle--icon-gift">Поставляется<br>
               в подарочной упаковке</p>
           </li>
         </ul>
@@ -163,8 +170,8 @@
         <div class="slider__list">
 
           <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого<br> количества
-              лайков, как
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+              лайков, как<br>
               у популярных инстамамочек.
               В отчаянии, я накупила аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -206,13 +213,13 @@
         <h2 class="contacts__title title">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <div class="contacts__text">e-mail:</div>
+            <div class="contacts__text contacts__text-email">e-mail:</div>
             <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </li>
           <li class="contacts__item">
             <div class="contacts__text">адрес:</div>
             <address class="contacts__address">
-              г. Санкт-Петербург<br> ул. Большая Конюшенная д. 19/8, офис 101
+              г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101
             </address>
           </li>
         </ul>

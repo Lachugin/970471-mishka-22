@@ -1,3 +1,14 @@
+.slider__list {
+  @media (min-width: 768px) {
+    padding-top: 22px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 16px;
+  }
+}
+
 .slider__toggle {
   cursor: pointer;
   outline: none;
@@ -5,7 +16,7 @@
   height: 26px;
   background-color: $button-bg-color;
   border: solid 1px #ececee;
-  padding: 31px 50px 13px 79px;
+  padding: 33px 48px 10px 79px;
 
   &--left {
     background-image: url("../img/reviews/huge-arrow-left.svg");
@@ -23,5 +34,8 @@
 
   @media (min-width: 768px) {
     border: none;
+    padding: 0;
+    margin-left: 43px;
+    margin-right: -6px;
   }
 }

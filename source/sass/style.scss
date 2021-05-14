@@ -50,7 +50,8 @@ a {
 
 .page__body {
   min-height: 100%;
-  margin: 0;
+  max-width: 1150px;
+  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
