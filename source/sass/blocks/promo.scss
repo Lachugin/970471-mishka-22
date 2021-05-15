@@ -3,24 +3,75 @@
 }
 
 .promo__wrapper {
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .promo__bg-img {
-  background-image: url("../img/promo/hero-mobile@2x 1.png");
+  background-image: url("../img/promo/hero-mobile.png");
   background-repeat: no-repeat;
+  background-size: 320px auto;
+  background-position: center -24px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo/hero-mobile@2x.png");
+    background-size: 320px auto;
+    background-position: center -24px;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/promo/hero-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 768px auto;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/hero-desktop@2x.png");
+      background-size: 768px auto;
+      background-position: center;
+    }
+  }
 }
 
 .promo__title {
+  margin: 0 auto;
+  padding: 68px 30px 120px 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 244px;
   font-style: normal;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   color: $headlines-basic-color;
+
+  @media (min-width: 768px) {
+    padding-top: 157px;
+    padding-bottom: 371px;
+    width: 497px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: 1150px) {
+    font-size: 53px;
+    line-height: 57px;
+    width: 700px;
+    justify-content: center;
+    padding-bottom: 357px;
+  }
+}
+
+.promo__inner {
+  display: grid;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .promo__button {
@@ -28,10 +79,24 @@
   color: $text-rare-color;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 19px;
+  line-height: 24px;
+  padding: 5px 30px 12px 30px;
+  display: flex;
+  justify-content: space-between;
 
   &--darker {
     background-color: $background-rare-two-color;
+  }
+
+  @media (min-width: 768px) {
+    padding: 7px 37px 20px 37px;
+  }
+}
+
+.promo__text {
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

@@ -1,9 +1,49 @@
 .map {
-  width: 768px;
-  height: 457px;
-  background-image: url("../img/contacts/map.jpg");
-  background-color: goldenrod;
-  background-position: center/center;
+  margin-top: 35px;
+  background-image: url("../img/contacts/map-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 320px auto;
+  background-position: center;
+  background-color: rgb(118, 97, 45);
+  height: 454px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/contacts/map-mobile@2x.png");
+    background-size: 320px auto;
+    background-position: center;
+    height: 454px;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/contacts/map-table.png");
+    background-repeat: no-repeat;
+    background-size: 768px auto;
+    background-position: center;
+    margin: 0;
+    margin-top: 21px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/contacts/map-table@2x.png");
+      background-size: 768px auto;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: 1150px) {
+    background-image: url("../img/contacts/map-table.png");
+    background-repeat: no-repeat;
+    background-size: 768px auto;
+    background-position: center;
+    width: 527px;
+    height: 457px;
+    margin-left: auto;
+    margin-right: 49px;
+    margin-top: 53px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/contacts/map-table@2x.png");
+      background-size: 768px auto;
+      background-position: center;
+    }
+  }
 }
