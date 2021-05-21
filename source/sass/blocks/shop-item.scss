@@ -9,7 +9,7 @@
       background-repeat: repeat-x;
       background-size: auto;
       width: 100%;
-      height: 24px;
+      height: 25px;
       left: 0;
       top: -20px;
     }
@@ -24,6 +24,7 @@
 }
 
 .shop-item__wrapper {
+  position: relative;
   margin: 0;
   padding-top: 10px;
   padding-bottom: 0;
@@ -32,6 +33,8 @@
 
   @media (min-width: 768px) {
     padding-bottom: 17px;
+    max-width: 1150px;
+    margin: auto;
   }
 }
 

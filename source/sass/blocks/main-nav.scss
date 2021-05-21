@@ -15,32 +15,17 @@
     padding-top: 0;
     position: relative;
     margin-bottom: -62px;
-
-    &::after {
-      position: absolute;
-      margin: 0 auto;
-      content: "";
-      display: block;
-      right: 0;
-      left: 0;
-      top: 88px;
-      width: 100%;
-      height: 1px;
-      box-shadow: 0 1px 0;
-      color: #ececee;
-    }
   }
 
   @media (min-width: 1150px) {
     grid-template-columns: 427px 236px 1fr;
-
-    &::after {
-      width: 1150px;
-    }
+    max-width: 1150px;
+    margin: auto;
+    margin-bottom: -62px;
   }
 }
 
-.main-nav__toggle {
+.main-nav__toggle-active {
   border: none;
   background-image: url("../img/header/menu-close.svg");
   background-repeat: no-repeat;
@@ -50,6 +35,23 @@
   height: 20px;
   position: absolute;
   top: 29px;
+  right: 30px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-nav__toggle-close {
+  border: none;
+  background-image: url("../img/header/burger.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: $button-bg-color;
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  top: 32px;
   right: 30px;
 
   @media (min-width: 768px) {

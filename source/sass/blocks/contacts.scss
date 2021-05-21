@@ -1,4 +1,7 @@
 .contacts {
+  max-width: 1150px;
+  margin: auto;
+
   &::before {
     content: "";
     display: block;
@@ -47,7 +50,7 @@
 
 .contacts__wrapper {
   margin: 0;
-  padding-top: 69px;
+  padding-top: 68px;
   padding-bottom: 0;
 
   @media (min-width: 768px) {
@@ -206,7 +209,7 @@
   font-size: 14px;
   line-height: 30px;
   width: 100%;
-  padding-left: 18px;
+  padding-left: 24px;
 
   @media (min-width: 768px) {
     font-size: 17px;

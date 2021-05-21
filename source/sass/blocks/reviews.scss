@@ -1,4 +1,7 @@
 .reviews {
+  max-width: 1150px;
+  margin: auto;
+
   @media (min-width: 768px) {
     background-color: #ffffff;
     background-image: url("../img/reviews/review-table.png");

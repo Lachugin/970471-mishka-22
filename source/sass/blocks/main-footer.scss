@@ -5,6 +5,11 @@
   padding-left: 30px;
   padding-right: 30px;
   background-color: $background-footer-color;
+}
+
+.main-footer__inner {
+  margin: auto;
+  max-width: 1150px;
 
   @media (min-width: 768px) {
     display: flex;

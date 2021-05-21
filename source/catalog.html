@@ -14,25 +14,26 @@
 </head>
 
 <body class="page__body">
+
   <header class="page-header">
 
     <nav class="main-nav">
 
-      <a class="main-nav__logo">
+      <a href="index.html" class="main-nav__logo">
         <picture>
-          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" width="136" height="46">
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" width="148" height="73">
           <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" width="114" height="46">
           <img class="main-nav__logo-img" src="img/mishka-logo-mobile.svg" width="86" height="35"
-          alt="Логотип Мишка сайт по продаже игрушек, ручной работы">
+            alt="Логотип Мишка сайт по продаже игрушек, ручной работы">
         </picture>
       </a>
 
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle-close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
       <ul class="main-nav__list main-nav__table-grid">
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item-d">
           <a href="catalog.html" class="main-nav__link main-nav__item-table">Каталог товаров</a>
         </li>
         <li class="main-nav__item main-nav__item-table main-nav__item-table--border">
@@ -184,32 +185,37 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__logo">
-      <img class="visually-hidden" src="img/footer/logo-footer.svg" alt="logo" />
-    </div>
-    <ul class="main-footer__list">
-      <li class="main-footer__item">
-        <a href="#" class="main-footer__link">
-          <img src="img/footer/insta.svg" alt="Инстаграм" />
+    <div class="main-footer__inner">
+      <div class="main-footer__logo">
+        <a href="index.html">
+          <img class="main-footer__logo" src="img/footer/logo-footer.svg" alt="logo">
         </a>
-      </li>
-      <li class="main-footer__item">
-        <a href="#" class="main-footer__link">
-          <img src="img/footer/fb.svg" alt="Фейсбук" />
-        </a>
-      </li>
-      <li class="main-footer__item">
-        <a href="#" class="main-footer__link">
-          <img src="img/footer/twitter.svg" alt="Твиттер" />
-        </a>
-      </li>
-    </ul>
+      </div>
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <img src="img/footer/insta.svg" alt="Инстаграм">
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <img src="img/footer/fb.svg" alt="Фейсбук">
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <img src="img/footer/twitter.svg" alt="Твиттер">
+          </a>
+        </li>
+      </ul>
 
-    <div class="main-footer__academy-logo">
-      <span class="main-footer__academy-logo__text">Разработано</span>
-      <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/footer/icon-logo-htmlacademy.svg"
-          alt="Логотип htmlacademy" /></a>
+      <div class="main-footer__academy-logo">
+        <div class="main-footer__academy-logo__text">Разработано</div>
+        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/footer/icon-logo-htmlacademy.svg"
+            alt="Логотип htmlacademy"></a>
+      </div>
     </div>
+
   </footer>
 </body>
 

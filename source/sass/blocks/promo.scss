@@ -65,6 +65,8 @@
 
 .promo__inner {
   display: grid;
+  max-width: 1150px;
+  margin: auto;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
