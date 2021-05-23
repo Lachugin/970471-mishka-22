@@ -19,7 +19,7 @@
 
     <nav class="main-nav">
 
-      <a href="index.html" class="main-nav__logo">
+      <a class="main-nav__logo">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" width="148" height="73">
           <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" width="114" height="46">
@@ -71,88 +71,119 @@
   </header>
 
   <main class="page-main">
-    <section class="promo">
-      <div class="promo__wrapper">
-        <h1 class="promo__title">Каталог товаров</h1>
-      </div>
-    </section>
 
     <section class="catalog">
-      <h2 class="visually-hidden">Лист с товарами</h2>
+      <div class="catalog__wrap-title">
+        <h1 class="catalog__title">Каталог товаров</h1>
+      </div>
+
       <div class="catalog__wrapper">
         <ul class="catalog__list">
           <li class="catalog__item">
+            <article class="card-item">
+              <div class="card-item__container-img">
+                <a href="#" class="card-item__img-link">
+                  <picture>
+                    <source media="(min-width: 1150px)"
+                      srcset="img/catalog/bunny-desktop.png 1x, img/catalog/bunny-desktop2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/bunny-table.png 1x, img/catalog/bunny-table2x.png 2x">
+                    <img class="card-item__img" src="img/catalog/bunny-mobile.png"
+                      srcset="img/catalog/bunny-mobile2x.png 2x" alt="Зайчик-попрыгайчик">
+                  </picture>
+                </a>
+              </div>
 
-            <div class="card-item">
-              <div class="card-item__inner">
-                <img src="img/catalog/bunny-mobile.png" alt="Зайчик-попрыгайчик" class="card-item__img" />
-                <div class="card-item__info">
+              <div class="card-item__container card-item__info">
+                <div class="card-item__info-inner">
                   <h3 class="card-item__title">Зайчик-попрыгайчик</h3>
                   <p class="card-item__text">Рост 30 см, вес 200 г</p>
-                  <div class="card-item__box">
-                    <span class="card-item__price">1 200 руб.</span>
-                    <a href="#" class="card-item__link">
-                      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.2"
-                          d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
-                          fill="black" />
-                      </svg>
-                      <span class="visually-hidden">Корзина</span>
-                    </a>
-                  </div>
-
                 </div>
-              </div>
-            </div>
+                <div class="card-item__box">
+                  <span class="card-item__price">1 200 руб.</span>
+                  <a href="#" class="card-item__link">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2"
+                        d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
+                        fill="black" />
+                    </svg>
+                    <span class="visually-hidden">Корзина</span>
+                  </a>
+                </div>
 
+              </div>
+            </article>
           </li>
 
           <li class="catalog__item">
-            <div class="card-item">
-              <div class="card-item__inner">
-                <img src="img/catalog/basket-mobile.png" alt="Корзинка для белья" class="card-item__img" />
-                <div class="card-item__info">
+            <article class="card-item">
+              <div class="card-item__container-img">
+                <a href="#" class="card-item__img-link">
+                  <picture>
+                    <source media="(min-width: 1150px)"
+                      srcset="img/catalog/basket-desktop.png 1x, img/catalog/basket-desktop2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/basket-table.png 1x, img/catalog/basket-table2x.png 2x">
+                    <img class="card-item__img" src="img/catalog/basket-mobile.png"
+                      srcset="img/catalog/basket-mobile2x.png 2x" alt="Корзинка для белья">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="card-item__container card-item__info">
+                <div class="card-item__info-inner">
                   <h3 class="card-item__title">Корзинка для белья</h3>
                   <p class="card-item__text">Диаметр 15 см, высота 10 см</p>
-                  <div class="card-item__box">
-                    <span class="card-item__price">690 руб.</span>
-                    <a href="#" class="card-item__link">
-                      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.2"
-                          d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
-                          fill="black" />
-                      </svg>
-                      <span class="visually-hidden">Корзина</span>
-                    </a>
-                  </div>
-
                 </div>
+                <div class="card-item__box">
+                  <span class="card-item__price">690 руб.</span>
+                  <a href="#" class="card-item__link">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2"
+                        d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
+                        fill="black" />
+                    </svg>
+                    <span class="visually-hidden">Корзина</span>
+                  </a>
+                </div>
+
               </div>
-            </div>
+            </article>
           </li>
           <li class="catalog__item">
-            <div class="card-item">
-              <div class="card-item__inner">
-                <img src="img/catalog/big-basket-mobile.png" alt="Большая корзинка для игрушек"
-                  class="card-item__img" />
-                <div class="card-item__info">
-                  <h3 class="card-item__title">Большая корзинка для игрушек</h3>
-                  <p class="card-item__text">Диаметр 30 см, высота 30 см</p>
-                  <div class="card-item__box">
-                    <span class="card-item__price">1 500 руб.</span>
-                    <a href="#" class="card-item__link">
-                      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.2"
-                          d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
-                          fill="black" />
-                      </svg>
-                      <span class="visually-hidden">Корзина</span>
-                    </a>
-                  </div>
-
-                </div>
+            <article class="card-item">
+              <div class="card-item__container-img">
+                <a href="#" class="card-item__img-link">
+                  <picture>
+                    <source media="(min-width: 1150px)"
+                      srcset="img/catalog/big-basket-desktop.png 1x, img/catalog/big-basket-desktop2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/big-basket-table.png 1x, img/catalog/big-basket-table2x.png 2x">
+                    <img class="card-item__img" src="img/catalog/big-basket-mobile.png"
+                      srcset="img/catalog/big-basket-mobile2x.png 2x" alt="Зайчик-попрыгайчик">
+                  </picture>
+                </a>
               </div>
-            </div>
+
+              <div class="card-item__container card-item__info">
+                <div class="card-item__info-inner">
+                  <h3 class="card-item__title">Большая корзинка<br> для игрушек</h3>
+                  <p class="card-item__text">Диаметр 30 см, высота 30 см</p>
+                </div>
+                <div class="card-item__box card-item__box--pt">
+                  <span class="card-item__price">1 500 руб.</span>
+                  <a href="#" class="card-item__link">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2"
+                        d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
+                        fill="black" />
+                    </svg>
+                    <span class="visually-hidden">Корзина</span>
+                  </a>
+                </div>
+
+              </div>
+            </article>
           </li>
         </ul>
       </div>
@@ -161,25 +192,24 @@
     <section class="demonstration">
       <h2 class="visually-hidden">Видео Процесса производства</h2>
       <div class="demonstration__wrapper">
+        <button class="demonstration__button-play"></button>
         <div class="demonstration__video">
           <!-- тут будет мультик  -->
         </div>
-        <div class="demonstration__box">
-          <div class="demonstration__inner">
-            <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M26 10L32 6V22L26 18V10ZM24 10V18C24 20.2 22.2 22 20 22H4C1.8 22 0 20.2 0 18V10C0 7.8 1.8 6 4 6H14C14 4.9 14.9 4 16 4V2H5C4.4 2 4 1.6 4 1C4 0.4 4.4 0 5 0H17C17.6 0 18 0.4 18 1V4C19.1 4 20 4.9 20 6C22.2 6 24 7.8 24 10ZM12 10H4V18H12V10ZM20 11C20 10.4 19.6 10 19 10H15C14.4 10 14 10.4 14 11C14 11.6 14.4 12 15 12H19C19.6 12 20 11.6 20 11Z"
-                fill="#63D1BB" />
-            </svg>
-            <h3 class="demonstration__title">Процесс производства</h3>
-          </div>
-
-          <p class="demonstration__text">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное
-            видео о том, как появляются наши товары.
-          </p>
-          <button class="button demonstration__button">СДелать заказ</button>
+        <div class="demonstration__inner">
+          <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26 10L32 6V22L26 18V10ZM24 10V18C24 20.2 22.2 22 20 22H4C1.8 22 0 20.2 0 18V10C0 7.8 1.8 6 4 6H14C14 4.9 14.9 4 16 4V2H5C4.4 2 4 1.6 4 1C4 0.4 4.4 0 5 0H17C17.6 0 18 0.4 18 1V4C19.1 4 20 4.9 20 6C22.2 6 24 7.8 24 10ZM12 10H4V18H12V10ZM20 11C20 10.4 19.6 10 19 10H15C14.4 10 14 10.4 14 11C14 11.6 14.4 12 15 12H19C19.6 12 20 11.6 20 11Z"
+              fill="#63D1BB" />
+          </svg>
+          <h3 class="demonstration__title">Процесс производства</h3>
         </div>
+
+        <p class="demonstration__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное
+          видео о том, как появляются наши товары.
+        </p>
+        <button class="button demonstration__button">СДелать заказ</button>
       </div>
     </section>
   </main>
