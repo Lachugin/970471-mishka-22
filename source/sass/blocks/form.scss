@@ -1,3 +1,21 @@
+.form__input {
+  outline: none;
+}
+
+.form__input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: 768px) {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
 .form__list {
   list-style: none;
 }
@@ -369,7 +387,6 @@
   }
 }
 
-
 .form__item-border {
   position: relative;
   padding-top: 30px;
@@ -450,7 +467,7 @@
 
   @media (min-width: 768px) {
     background-color: #f1f1f1;
-    padding-bottom: 52px;
+    padding-bottom: 44px;
   }
 }
 
@@ -470,37 +487,42 @@
 
 .form__input-tel {
   border: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 18px;
   display: flex;
   align-items: center;
   background-color: unset;
-  padding-right: 33px;
+  padding-right: 26px;
 
   @media (min-width: 768px) {
     padding-right: 213px;
     padding-left: 199px;
-    font-size: 17px;
-    line-height: 19px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   @media (min-width: 1150px) {
     width: 647px;
     padding-left: 17px;
     padding-right: 0;
-    font-size: 17px;
+    font-weight: normal;
+    font-size: 19px;
     line-height: 18px;
   }
 }
 
 .form__input-email {
-  padding-right: 9px;
+  padding-right: 20px;
   font-size: 17px;
   line-height: 18px;
 
   @media (min-width: 768px) {
-    padding-right: 187px;
+    padding-right: 205px;
     font-size: 19px;
     line-height: 18px;
   }
@@ -837,10 +859,6 @@
   background-size: 43% 43%;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.form__input {
-  outline: none;
 }
 
 .form__input-radio + label:hover::before {

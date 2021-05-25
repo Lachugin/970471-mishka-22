@@ -137,6 +137,12 @@
 }
 
 .reviews__button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+
   @media (min-width: 768px) {
     margin-left: auto;
     width: 175px;

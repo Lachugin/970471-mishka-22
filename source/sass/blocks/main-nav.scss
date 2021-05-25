@@ -146,7 +146,7 @@
   }
 }
 
-.main-nav__mobail {
+.main-nav__mobile {
   @media (max-width: 767px) {
     display: none;
   }
@@ -234,7 +234,7 @@
   }
 }
 
-.main-nav__item-d {
+.main-nav__item-decor-li {
   @media (min-width: 1150px) {
     margin: 0 auto;
     padding: 0;
@@ -242,7 +242,6 @@
     margin-top: 26px;
   }
 }
-
 
 .main-nav__item-table {
   @media (min-width: 768px) {
@@ -288,7 +287,6 @@
 .main-nav__item-table:active {
   opacity: 0.3;
 }
-
 
 .main-nav__table {
   @media (min-width: 768px) {
@@ -341,7 +339,6 @@
 .main-nav__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
 
 .main-nav__icon {
   position: absolute;
