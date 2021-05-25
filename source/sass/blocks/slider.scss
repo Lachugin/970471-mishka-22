@@ -39,3 +39,11 @@
     margin-right: -6px;
   }
 }
+
+.slider__toggle:hover {
+  opacity: 0.6;
+}
+
+.slider__toggle:active {
+  opacity: 0.3;
+}

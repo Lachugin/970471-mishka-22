@@ -1,4 +1,7 @@
 .contacts {
+  max-width: 1150px;
+  margin: auto;
+
   &::before {
     content: "";
     display: block;
@@ -9,7 +12,7 @@
     width: 320px;
     height: 6px;
     left: 0;
-    top: 915px;
+    margin-top: 44px;
   }
 
   @media (min-width: 768px) {
@@ -37,7 +40,7 @@
       background-image: url("../img/line-desktop.svg");
       background-repeat: repeat-x;
       background-size: auto;
-      width: 100%;
+      max-width: 1050px;
       height: 24px;
       left: 0;
       top: 915px;
@@ -47,7 +50,7 @@
 
 .contacts__wrapper {
   margin: 0;
-  padding-top: 69px;
+  padding-top: 23px;
   padding-bottom: 0;
 
   @media (min-width: 768px) {
@@ -177,12 +180,32 @@
     background-color: $decorative-border-color;
   }
 
+  @media (min-width: 768px) {
+    &::after {
+      width: 205px;
+      height: 1px;
+      bottom: -1px;
+    }
+  }
+
   @media (min-width: 1150px) {
     &::after {
       width: 200px;
       height: 1px;
       bottom: -7px;
     }
+  }
+}
+
+.contacts__link:hover {
+  color: rgba(70, 193, 174, 1);
+}
+
+.contacts__link:active {
+  color: rgba(70, 193, 174, 1);
+
+  &::after {
+    display: none;
   }
 }
 
@@ -206,7 +229,7 @@
   font-size: 14px;
   line-height: 30px;
   width: 100%;
-  padding-left: 18px;
+  padding-left: 24px;
 
   @media (min-width: 768px) {
     font-size: 17px;

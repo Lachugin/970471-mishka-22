@@ -1,5 +1,7 @@
 .about-us {
   padding-top: 30px;
+  max-width: 1150px;
+  margin: auto;
 
   &::before {
     content: "";
@@ -42,7 +44,7 @@
       background-image: url("../img/line-desktop.svg");
       background-repeat: repeat-x;
       background-size: auto;
-      width: 100%;
+      max-width: 1050px;
       height: 24px;
       left: 0;
       top: 915px;

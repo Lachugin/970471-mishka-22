@@ -5,6 +5,11 @@
   padding-left: 30px;
   padding-right: 30px;
   background-color: $background-footer-color;
+}
+
+.main-footer__inner {
+  margin: auto;
+  max-width: 1150px;
 
   @media (min-width: 768px) {
     display: flex;
@@ -73,7 +78,7 @@
   }
 }
 
-.main-footer__academy-logo__text {
+.main-footer__academy-logo-text {
   padding-right: 27px;
   font-weight: bold;
   font-size: 19px;
@@ -83,4 +88,13 @@
   @media (min-width: 768px) {
     border: none;
   }
+}
+
+.main-footer__link-logo svg:hover path {
+  fill: rgba(70, 193, 174, 1);
+}
+
+.main-footer__link-logo svg:active path {
+  fill: rgba(70, 193, 174, 1);
+  opacity: 0.3;
 }

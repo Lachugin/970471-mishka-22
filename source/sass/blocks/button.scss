@@ -11,3 +11,13 @@
   cursor: pointer;
   text-transform: uppercase;
 }
+
+.button:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.button:active {
+  background-color: #444444;
+  color: rgba(255, 255, 255, 0.3);
+}

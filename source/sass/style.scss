@@ -20,6 +20,7 @@
 @import "blocks/card";
 @import "blocks/catalog";
 @import "blocks/demonstration";
+@import "blocks/modal";
 
 img {
   max-width: 100%;
@@ -50,10 +51,14 @@ a {
 
 .page__body {
   min-height: 100%;
-  max-width: 1150px;
+  min-width: 320px;
   margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
 }
