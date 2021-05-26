@@ -21,6 +21,7 @@
 }
 
 .form__box {
+  position: relative;
   border: none;
   margin: 0;
   padding: 0;
@@ -147,7 +148,8 @@
 
 .form__desc-type {
   position: absolute;
-  top: -1px;
+  top: 29px;
+  left: 30px;
 
   @media (max-width: 765px) {
     &::after {
@@ -164,19 +166,20 @@
 
   @media (min-width: 768px) {
     padding: 0;
-    left: -139px;
-    top: 50px;
+    left: 50px;
+    top: 81px;
   }
 
   @media (min-width: 1150px) {
-    top: 54px;
-    left: -114px;
+    top: 84px;
+    left: 110px;
   }
 }
 
 .form__desc-color {
   position: absolute;
-  top: -41px;
+  top: 28px;
+  left: 30px;
 
   @media (max-width: 765px) {
     &::after {
@@ -198,8 +201,8 @@
   }
 
   @media (min-width: 1150px) {
-    top: 17px;
-    left: -113px;
+    top: 68px;
+    left: 111px;
   }
 }
 
@@ -333,7 +336,8 @@
 
 .form__desc-fio {
   position: absolute;
-  top: -13px;
+  top: 13px;
+  left: 30px;
 
   @media (max-width: 767px) {
     &::before {
@@ -349,13 +353,13 @@
   }
 
   @media (min-width: 768px) {
-    top: 50px;
-    left: -28px;
+    top: 68px;
+    left: 50px;
   }
 
   @media (min-width: 1150px) {
-    top: 50px;
-    left: 22px;
+    top: 70px;
+    left: 110px;
   }
 }
 
@@ -467,7 +471,7 @@
 
   @media (min-width: 768px) {
     background-color: #f1f1f1;
-    padding-bottom: 44px;
+    padding-bottom: 51px;
   }
 }
 
@@ -553,7 +557,7 @@
   }
 
   @media (min-width: 768px) {
-    padding: 42px 0 14px 0;
+    padding: 38px 0 14px 0;
 
     &::before {
       position: absolute;
@@ -568,7 +572,7 @@
   }
 
   @media (min-width: 1150px) {
-    padding: 46px 0 11px 0;
+    padding: 46px 0 7px 0;
 
     &::before {
       position: absolute;
@@ -585,7 +589,8 @@
 
 .form__desc-tel {
   position: absolute;
-  top: 9px;
+  top: 43px;
+  left: 30px;
 
   @media (max-width: 765px) {
     &::after {
@@ -601,19 +606,20 @@
   }
 
   @media (min-width: 768px) {
-    top: 47px;
-    left: 11px;
+    top: 65px;
+    left: 50px;
   }
 
   @media (min-width: 1150px) {
-    top: 48px;
-    left: -117px;
+    top: 69px;
+    left: 110px;
   }
 }
 
 .form__desc-email {
   position: absolute;
-  top: 5px;
+  top: 150px;
+  left: 30px;
 
   @media (max-width: 765px) {
     &::after {
@@ -629,13 +635,13 @@
   }
 
   @media (min-width: 768px) {
-    top: 45px;
-    left: 15px;
+    top: 143px;
+    left: 49px;
   }
 
   @media (min-width: 1150px) {
-    top: 45px;
-    left: -116px;
+    top: 146px;
+    left: 110px;
   }
 }
 
@@ -648,6 +654,11 @@
   padding: 0;
   position: relative;
 
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
   @media (min-width: 1150px) {
     width: 700px;
   }
@@ -655,8 +666,8 @@
 
 .form__desc-add {
   position: absolute;
-  top: -11px;
-  left: -1px;
+  top: 4px;
+  left: 30px;
 
   @media (max-width: 765px) {
     &::after {
@@ -672,13 +683,13 @@
   }
 
   @media (min-width: 768px) {
-    top: 55px;
-    left: 20px;
+    top: 68px;
+    left: 49px;
   }
 
   @media (min-width: 1150px) {
-    top: 52px;
-    left: -113px;
+    top: 69px;
+    left: 111px;
   }
 }
 
@@ -686,6 +697,7 @@
   width: 241px;
   height: 120px;
   border: 2px solid #000000;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;

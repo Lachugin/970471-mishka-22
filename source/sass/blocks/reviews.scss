@@ -22,6 +22,12 @@
   }
 }
 
+.reviews__inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .reviews__wrapper {
   position: relative;
   margin: 0;

@@ -1,6 +1,6 @@
 .card-item__img {
-  width: 100%;
-  height: auto;
+  width: 260px;
+  height: 195px;
   background-color: $background-promo-color;
 
   @media (min-width: 768px) {
@@ -15,7 +15,7 @@
 }
 
 .card-item {
-  width: auto;
+  width: 260px;
 
   @media (min-width: 768px) {
     width: 668px;
@@ -144,6 +144,7 @@
     padding-bottom: 9px;
   }
 }
+
 
 .card-item__info-inner {
   display: flex;
