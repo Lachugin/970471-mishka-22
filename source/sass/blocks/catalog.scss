@@ -73,8 +73,8 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-flow: column nowrap;
+  align-items: stretch;
 
   @media (min-width: 768px) {
     padding-top: 79px;
@@ -88,13 +88,17 @@
 }
 
 .catalog__list {
-  display: grid;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: 768px) {
+    display: grid;
     grid-template-columns: 168px 168px 168px 168px;
+    justify-content: center;
   }
 
   @media (min-width: 1150px) {

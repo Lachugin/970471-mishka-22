@@ -1,10 +1,10 @@
 .map {
-  margin-top: 35px;
+  margin-top: 47px;
   background-image: url("../img/contacts/map-mobile.png");
   background-repeat: no-repeat;
   background-size: 320px auto;
   background-position: center;
-  background-color: rgb(118, 97, 45);
+  background-color: rgb(144, 133, 107);
   height: 454px;
 
   @media (min-resolution: 2dppx) {
@@ -49,8 +49,9 @@
 }
 
 .map iframe {
-  width: 320px;
+  width: 100%;
   height: 454px;
+  border: none;
 
   @media (min-width: 768px) {
     width: 100%;
@@ -58,7 +59,7 @@
   }
 
   @media (min-width: 1150px) {
-    width: 527px;
+    width: 100%;
     height: 457px;
   }
 }
