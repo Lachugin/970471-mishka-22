@@ -66,12 +66,13 @@
 }
 
 .demonstration__video {
+  width: 100%;
+  background-color: darkgray;
   position: relative;
   background-image: url("../img/catalog/video-bg-mobile.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  width: 260px;
   height: 150px;
 
   @media (max-width: 767px) {
@@ -114,19 +115,10 @@
   position: absolute;
   width: 100.6px;
   height: 76.8px;
-  top: 40px;
-  left: 77px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
   z-index: 99;
-
-  @media (min-width: 768px) {
-    top: 187px;
-    left: 281px;
-  }
-
-  @media (min-width: 1150px) {
-    top: 189px;
-    left: 291px;
-  }
 }
 
 .demonstration__button-play:hover {

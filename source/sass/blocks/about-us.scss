@@ -114,6 +114,8 @@
 }
 
 .about-us__subtitle--icon-flower {
+  width: 87%;
+
   &::before {
     position: absolute;
     content: "";
@@ -126,13 +128,20 @@
     background-repeat: no-repeat;
 
     @media (min-width: 768px) {
+      width: 70%;
       top: 10px;
       left: 28px;
     }
   }
+
+  @media (min-width: 768px) {
+    width: 70%;
+  }
 }
 
 .about-us__subtitle--icon-banknote {
+  width: 200px;
+
   &::before {
     position: absolute;
     content: "";
@@ -147,9 +156,15 @@
       top: 13px;
     }
   }
+
+  @media (min-width: 768px) {
+    width: 75%;
+  }
 }
 
 .about-us__subtitle--icon-heart {
+  width: 200px;
+
   &::before {
     position: absolute;
     content: "";
@@ -162,13 +177,20 @@
     background-repeat: no-repeat;
 
     @media (min-width: 768px) {
+      width: 70%;
       top: 18px;
       left: 28px;
     }
   }
+
+  @media (min-width: 768px) {
+    width: 70%;
+  }
 }
 
 .about-us__subtitle--icon-ball {
+  width: 256px;
+
   &::before {
     position: absolute;
     content: "";
@@ -184,6 +206,10 @@
       top: 14px;
       left: 8px;
     }
+  }
+
+  @media (min-width: 768px) {
+    width: 87%;
   }
 }
 
@@ -207,6 +233,8 @@
 }
 
 .about-us__subtitle--icon-gift {
+  width: 250px;
+
   &::before {
     position: absolute;
     content: "";
@@ -222,6 +250,10 @@
       top: 14px;
       left: 7px;
     }
+  }
+
+  @media (min-width: 768px) {
+    width: 70%;
   }
 }
 
