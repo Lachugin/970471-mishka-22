@@ -1,6 +1,6 @@
 .card-item__img {
-  width: 260px;
-  height: 195px;
+  width: 100%;
+  height: auto;
   background-color: $background-promo-color;
 
   @media (min-width: 768px) {
@@ -15,7 +15,7 @@
 }
 
 .card-item {
-  width: 260px;
+  width: auto;
 
   @media (min-width: 768px) {
     width: 668px;

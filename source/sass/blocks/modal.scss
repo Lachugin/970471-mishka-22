@@ -15,6 +15,13 @@
   align-items: center;
 }
 
+.modal__wrap {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
 .modal__inner {
   padding: 28px 30px 0 30px;
   display: flex;
@@ -92,6 +99,7 @@
 }
 
 .modal__btn {
+  width: 260px;
   padding: 18px 67px;
   border: none;
   outline: none;
@@ -104,8 +112,89 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  align-content: center;
+  justify-content: center;
 
   @media (min-width: 768px) {
     padding: 18px 112px;
+    width: 350px;
   }
+}
+
+.modal__box {
+  padding: 0;
+  width: 260px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding-bottom: 31px;
+
+  @media (min-width: 768px) {
+    width: 350px;
+  }
+}
+
+.modal__custom-checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.modal__custom-checkbox > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.modal__custom-checkbox > span::before {
+  content: "S";
+  width: 82px;
+  height: 52px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  box-sizing: border-box;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  align-content: center;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    width: 112px;
+    height: 52px;
+  }
+}
+
+.modal__custom-checkbox--m > span::before {
+  content: "m";
+}
+
+.modal__custom-checkbox--l > span::before {
+  content: "l";
+}
+
+.modal__custom-checkbox > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.modal__custom-checkbox > input:not(:disabled):active + span::before {
+  border-color: rgba(98, 209, 186, 1);
+}
+
+.modal__custom-checkbox > input:checked + span::before {
+  border-color: rgba(98, 209, 186, 1);
 }

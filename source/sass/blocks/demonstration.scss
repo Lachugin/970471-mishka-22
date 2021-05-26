@@ -1,3 +1,4 @@
+
 .demonstration {
   margin: 0;
   padding-top: 0;
@@ -25,11 +26,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background: $background-basic-color;
+  background: #ffffff;
   mix-blend-mode: normal;
   border: 1px solid #ececec;
   box-sizing: border-box;
   padding-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 
   @media (min-width: 768px) {
     width: 668px;
@@ -108,7 +113,7 @@
   position: absolute;
   width: 100.6px;
   height: 76.8px;
-  top: 132px;
+  top: 40px;
   left: 77px;
   z-index: 99;
 
@@ -193,7 +198,7 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  width: 200px;
+  width: 77%;
   margin: auto;
   padding-top: 35px;
   padding-left: 7px;
